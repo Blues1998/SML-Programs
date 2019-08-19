@@ -1,0 +1,13 @@
+- fun sum_digits(n) = 
+= if n<=0
+= then n
+= else n mod 10 + sum(n div 10);
+val sum_digits = fn : int -> int
+- sum_digits(19);
+val it = 10 : int
+- sum_digits(61);
+val it = 7 : int
+- sum_digits(1919);
+val it = 20 : int
+- ^Z
+[12]+  Stopped 
