@@ -1,0 +1,12 @@
+Standard ML of New Jersey v110.78 [built: Thu Jul 23 11:21:58 2015]
+- fun fact(n) = 
+= if n = 1 then 1
+= else n*fact(n-1);
+val fact = fn : int -> int
+- fact(10);
+val it = 3628800 : int
+- fact(5);
+val it = 120 : int
+- fact(7);
+val it = 5040 : int
+- 
