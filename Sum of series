@@ -1,0 +1,13 @@
+*(1+2+3+4+5+6....+n)*
+Standard ML of New Jersey v110.78 [built: Thu Jul 23 11:21:58 2015]
+- fun sum_series(n) = 
+= if n = 1 then n
+= else n + sum_series(n-1)
+= ;
+val sum_series = fn : int -> int
+- sum_series(10);
+val it = 55 : int
+- sum_series(5);
+val it = 15 : int
+- sum_series(100);
+val it = 5050 : int
