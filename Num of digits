@@ -1,0 +1,14 @@
+Standard ML of New Jersey v110.78 [built: Thu Jul 23 11:21:58 2015]
+- fun num_digits(n) =
+= if n>=0 andalso n<=9 then 1
+= else 1 + num_digits(n div 10);
+val num_digits = fn : int -> int
+- num_digits(10);
+val it = 2 : int
+- num_digits(9838814034);
+stdIn:5.12-5.22 Error: int constant too large
+- num_digits(564);
+val it = 3 : int
+- num_digits(63213);
+val it = 5 : int
+- 
