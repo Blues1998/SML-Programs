@@ -1,0 +1,13 @@
+Standard ML of New Jersey v110.78 [built: Thu Jul 23 11:21:58 2015]
+- fun g(a,b,c) = 
+= if a>b andalso a>c
+= 	then a
+= else if b>a andalso b>c
+= 	then b
+= else c
+= ;
+val g = fn : int * int * int -> int
+- g(9,4,3);
+val it = 9 : int
+- g(4,4,5);
+val it = 5 : int
