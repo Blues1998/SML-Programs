@@ -1,0 +1,32 @@
+- fun pow(x, y, res) =
+= if y < 1 then res
+= else pow(x, y-1, res*x);
+val pow = fn : int * int * int -> int
+-
+- fun dig(n) =
+= if n<10 then 1
+= else 1+ dig(n div 10);
+val dig = fn : int -> int
+-
+- fun arm(num, digits, sum) =
+= if num<1 then sum
+= else sum + arm(num div 10, digits, pow((num mod 10), digits, res));
+val arm = fn : int * int * int -> int
+-
+- val sum = 0;
+val sum = 0 : int
+-
+- val res = 1;
+val res = 1 : int
+-
+- arm(153, dig(153), sum);
+val it = 153 : int
+-
+- arm(154, dig(154), sum);
+val it = 190 : int
+-
+- arm(370, dig(370), sum);
+val it = 370 : int
+-
+- arm(9891, dig(9891), sum);
+val it = 17219 : int
