@@ -1,0 +1,9 @@
+- fun pow(x, y, res) =
+= if y < 1 then res
+= else pow(x, y-1, res*x);
+val pow = fn : int * int * int -> int
+- pow(3,3, res);
+val it = 27 : int
+- pow(9,2,res);
+val it = 81 : int
+-
