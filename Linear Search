@@ -1,0 +1,24 @@
+-
+- (*Recursive Linear Search*)
+- (* Algorithm: Base case => If list is empty return 0
+= =               Recursive case => If head of list is same as search element return 1
+= =                                 Else pass tail of the list to function recursively. *)
+-
+- fun lin(list, data) =
+= if list = [] then 0
+= else
+=       if hd(list) = data then 1
+=       else lin(tl(list),data);        (*Recursively passing tail of list to function*)
+stdIn:391.9 Warning: calling polyEqual
+stdIn:393.14 Warning: calling polyEqual
+val lin = fn : ''a list * ''a -> int
+-
+- val test = [1,2,3,4,5];
+val test = [1,2,3,4,5] : int list
+- lin(test, 5);         (*Searching for 5 in the list*)
+val it = 1 : int
+- lin(test, 6);         (*Searching for 6 in the list*)
+val it = 0 : int
+-
+- (*It's working ^_^*)
+-
