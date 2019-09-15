@@ -1,0 +1,18 @@
+-
+- (*Concatenating two lists using recursion*)
+-
+- fun con(a,b) =
+= if b = [] then a
+= else con(a@[hd(b)], tl(b));
+stdIn:272.6 Warning: calling polyEqual
+val con = fn : ''a list * ''a list -> ''a list
+-
+- val x = [1,2,3];
+val x = [1,2,3] : int list
+-
+- val y = [4,5,6];
+val y = [4,5,6] : int list
+-
+- con(x,y);
+val it = [1,2,3,4,5,6] : int list
+-
