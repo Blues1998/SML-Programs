@@ -1,0 +1,25 @@
+- (*Head/Tail of a list*)
+-
+- (*hd is used to print the first element / head of a list*)
+-
+- val x = [1,2,3,4,5];
+val x = [1,2,3,4,5] : int list
+-
+- hd x;
+val it = 1 : int
+-
+- (*tl is used to print everything but the first element / tail of a list*)
+-
+- tl x;
+val it = [2,3,4,5] : int list
+-
+- (*You can also call these functions recursively, meaning...*)
+-
+- tl(tl(x));
+val it = [3,4,5] : int list
+-
+- (*and combining the two...*)
+-
+- hd(tl(tl(x)));
+val it = 3 : int
+-
