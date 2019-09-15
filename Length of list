@@ -1,0 +1,34 @@
+- (*Recursive program to find length of a list*)
+-
+- (*Algorithm: base condition => if list is empty, return 0.
+= Recursive condition: if list is not empty, pass 1 + function(tail of list) *)
+-
+- val x = [1,2,3,4]  (*Initialising a list*)
+=
+= fun length(l): int =
+= if l = [] then 0
+= else 1 + length(tl(l));
+stdIn:158.6 Warning: calling polyEqual
+val x = [1,2,3,4] : int list
+val length = fn : ''a list -> int
+-
+- length(x);
+val it = 4 : int
+-
+- (*We got a warning here because we did not define what kind of list we will pass to the function.
+= Meaning that this program will run for all kinds of lists. For example..*)
+-
+- val b = [true, false, true];
+val b = [true,false,true] : bool list
+-
+- length(b);
+val it = 3 : int
+-
+- val s = ["I", "love", "programming"];
+val s = ["I","love","programming"] : string list
+-
+- length(s);
+val it = 3 : int
+-
+- (*See, it works!*)
+-
